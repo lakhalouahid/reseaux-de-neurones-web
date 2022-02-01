@@ -1,0 +1,83 @@
+.page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  background-image: linear-gradient(to right bottom, #00C9A7, #C4FCEF);
+}
+.banner {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  flex-grow:1;
+  flex-basis:0;
+}
+
+.banner > div {
+  max-width: 600px;
+  padding: 0.8rem 2rem;
+  border: 1px solid gray;
+  border-radius: 10px;
+  box-shadow: 0 0 20px;
+  background-color: #fff;
+}
+
+big {
+  color: blue;
+}
+
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.4rem 1rem;
+  flex-grow:1;
+  flex-basis:0;
+}
+
+.sequence-wrapper {
+  border: 1px solid gray;
+  border-radius: 10px;
+  box-shadow: 0 0 20px;
+  padding: 1rem 1.4rem;
+  background-color: #fff;
+}
+.sequence-wrapper > div:first-child {
+  font-family: Monospace, sans-serif;
+  max-width: 500px;
+}
+.sequence-wrapper > div:first-child span{
+  font-size: 1rem;
+}
+.sequence-wrapper > div:last-child {
+  margin: 1rem 0rem;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-wrapper {
+  padding: 1rem 2rem;
+  margin: 2rem 0rem;
+}
+.text-wrapper > code {
+  color: #000;
+  white-space: pre-wrap;
+}
+
+#generate-btn {
+  margin-top: 1rem;
+  flex-grow: 0;
+}
+
+@media only screen and (max-width: 840px) {
+  .page {
+    flex-direction: column;
+  }
+}

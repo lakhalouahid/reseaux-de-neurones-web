@@ -8,9 +8,9 @@ from sklearn.datasets import make_classification, make_moons, make_circles
 train = False
 
 parser = argparse.ArgumentParser()
-parser.add_argument("-d", "--dataset", default=int, help="Help text")
-parser.add_argument("--x1", default=float, help="Help text")
-parser.add_argument("--x2", default=float, help="Help text")
+parser.add_argument("-d", "--dataset", default=1, type=int, help="Help text")
+parser.add_argument("--x1", default=50, type=float, help="Help text")
+parser.add_argument("--x2", default=50, type=float, help="Help text")
 args = parser.parse_args()
 x1 = args.x1
 x2 = args.x2
@@ -142,7 +142,7 @@ def main():
     else:
         datasets = load_datasets(10000)
         zombie_dataset = load_zoombie(f'./zombie_dataset_{dataset}.bin')
-        print(zombie_dataset.predict([20, 30]), end="")
+        print(zombie_dataset.predict([x1, x2]), end="")
 
 
 

@@ -1,0 +1,96 @@
+body {
+  font-family: 'Nunito', sans-serif;
+}
+.page {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+}
+.banner {
+  width: 35%;
+  height: 100%;
+}
+
+.banner > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.wrapper {
+  width: 65%;
+  height: 100%;
+  border-left: 10px solid #7f7f7f;
+}
+
+.images-wrapper {
+  height: 25%;
+  width: 100%;
+  display: flex;
+}
+
+.images-wrapper img {
+  height: 100%;
+  width: 33.33%;
+  object-fit: cover;
+}
+
+.form-wrapper {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-wrapper > form {
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+  box-shadow: 0px 0px 20px currentcolor;
+}
+
+
+.form-wrapper > form ul label{
+}
+.form-wrapper > form input[type="number"]{
+  width: 400px;
+}
+.form-wrapper > form .input-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.form-wrapper > form .input-list button{
+  margin-top: 40px;
+}
+
+.form-wrapper > form label {
+  font-size: 1.5rem;
+  font-family: monospace, sans-serif;
+  color: gray;
+}
+
+.result-wrapper .label {
+  font-size: 2.4rem;
+  font-weight: 700;
+  font-family: Verdana, sans-serif;
+  color: rgb(50, 200, 128);
+}
+#submit-btn {
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: Verdana, sans-serif;
+}
+
+.result-wrapper > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#result {
+  font-family: Verdana, sans-serif;
+  text-align: center;
+  font-size: 5rem;
+  font-weight: 700;
+}

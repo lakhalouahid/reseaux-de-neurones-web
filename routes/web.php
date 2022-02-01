@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PredictController;
+use App\Http\Controllers\SequenceController;
+use App\Http\Controllers\ZombieController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,7 +15,8 @@ use App\Http\Controllers\PredictController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::post('predict', [PredictController::class, 'predict'])->name('predict');
+Route::get('/zombie', [ZombieController::class, 'index']);
+Route::post('/zombie', [ZombieController::class, 'predict']);
+Route::get('/sequence', [SequenceController::class, 'index']);
+Route::post('/sequence', [SequenceController::class, 'generate']);
+Route::get('/', function(){return view('welcome');});
